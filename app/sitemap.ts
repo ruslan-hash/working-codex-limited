@@ -1,0 +1,1 @@
+import type{MetadataRoute}from"next";import{ORIGIN,pages}from"./data";export default function sitemap():MetadataRoute.Sitemap{return[{url:`${ORIGIN}/`,lastModified:"2026-08-22",priority:1},...pages.map(p=>({url:`${ORIGIN}/${p.slug}/`,lastModified:"2026-08-22",priority:p.commercial?.9:.7}))]}
